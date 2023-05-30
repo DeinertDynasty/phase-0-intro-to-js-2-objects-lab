@@ -3,6 +3,7 @@ let employee = {
   name: "John Doe",
   streetAddress: "123 Main St"
 };
+
 // Function 1: updateEmployeeWithKeyAndValue
 function updateEmployeeWithKeyAndValue(employee, key, value) {
   return { ...employee, [key]: value };
@@ -26,3 +27,5 @@ function destructivelyDeleteFromEmployeeByKey(employee, key) {
   delete employee[key];
   return employee;
 }
+
+
